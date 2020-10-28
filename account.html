@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub HTML/CSS CA</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <!-- <div class="header-wrapper"> -->
+        <div class="logo">
+            <a href="#"><img src="media/GameHub_Logo.png" alt="gamehub logo"></a>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav>
+
+            <div class="hamburger">
+                <i class="fas fa-bars fa-lg"></i>
+            </div>
+
+            <ul class="navbar">
+                <div class="icon">
+                    <a href=""><i class="fas fa-gamepad fa-lg"></i></a>
+                    <a href=""><li>Games</li></a>
+                </div>
+
+                <div class="icon">
+                    <a href=""><i class="fas fa-dollar-sign fa-lg"></i></a>
+                    <a href=""><li>Sell</li></a>
+                </div>
+
+                <div class="icon">
+                    <a href=""><i class="fas fa-user-circle fa-lg"></i></a>
+                    <a href=""><li>Account</li></a>
+                </div>
+
+                <div class="icon">
+                    <a href=""><i class="fas fa-shopping-cart fa-lg"></i></a>
+                    <a href=""><li>Cart</li></a>
+                </div>
+            </ul>
+        </nav>
+    <!-- </div> -->
+</header>
+
+<main>
+    <div class="account-container">
+        <div class="sign-in">
+            <h2>Sign in</h2>
+            <p>To an existing Game Hub Account</p>
+            <form>
+                <label for="username">Game Hub username</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label for="password">Password</label><br>
+                <input type="text" name="password" id="password"><br>
+                <input type="checkbox" name="remember me" id="remember">
+                <label for="remember">Remember me</label>
+            </form>
+            <a href="#" class="log-in-btn">Log in</a>
+        </div>
+
+        <div class="create-acc">
+            <h2>Create</h2>
+            <p class="bigger-text">A new free account</p>
+            <p>It's free to use. Continue on to create <br> 
+               your Game Hub account and link it to steam, the leading <br> 
+               digital solution for PC, Mac and Linux games and software</p>
+            <a href="#" class="log-in-btn">Create</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="social-media">
+        <a href=""><i class="fab fa-twitch fa-2x"></i></a>
+        <a href=""><i class="fab fa-discord fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+    </div>
+</footer>
+</body>
+</html>

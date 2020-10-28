@@ -377,6 +377,70 @@ nav{
     text-decoration: none;
 }
 
+/* ! Account.html */
+
+.account-container{
+    background-color: var(--dark);
+    max-width: 1100px;
+    margin: 140px auto 140px auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-right: 1px solid grey;
+    width: 400px;
+}
+.sign-in form{
+    margin-top: 1rem;
+}
+
+
+
+.sign-in input{
+    height: 25px;
+    margin-top: .8rem;
+}
+
+.sign-in label{
+    margin-top: .8rem;
+}
+
+.create-acc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 277px;
+}
+
+.bigger-text{
+    font-size: 22px;
+}
+
+.log-in-btn{
+    margin-top: 20px;
+    border: solid 1px black;
+    padding: 10px 20px;
+    width: 100px;
+    background-color: var(--yellow);
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--purple);
+}
+
+label{
+    color: white;
+}
+
 
 /* !Footer alle sider */
 
