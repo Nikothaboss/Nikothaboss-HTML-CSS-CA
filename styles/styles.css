@@ -28,6 +28,10 @@ p{
     font-size: 18px
 }
 
+ul{
+    list-style: none;
+}
+
 
 
 
@@ -330,7 +334,7 @@ nav{
 
 .game-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
     width: 90%;
     margin: auto;
@@ -404,9 +408,10 @@ nav{
 
 
 
-.sign-in input{
-    height: 25px;
+#username, #password{
+    height: 28px;
     margin-top: .8rem;
+    width: 250px;
 }
 
 .sign-in label{
@@ -429,7 +434,7 @@ nav{
     margin-top: 20px;
     border: solid 1px black;
     padding: 10px 20px;
-    width: 100px;
+    width: 150px;
     background-color: var(--yellow);
     border-radius: 20px;
     text-align: center;
@@ -441,16 +446,73 @@ label{
     color: white;
 }
 
+/* ! Account2.html/Account3.html */
+
+.create-wrapper{
+    background-image: url(/media/GameHub_Logo_transparent.png);
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    background-position-x: 70%;
+    background-position-y: 60%;
+    height: 726px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-wrapper h2{
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+#e-mail, #confirm, #country{
+    height: 35px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.create-wrapper form{
+    height: 250px;
+    margin-left: 100px;
+}
+
+.robot{
+    background: white;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#check{
+    margin-right: 20px;
+}
+
+.create-wrapper ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+.create-wrapper a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+
 
 /* !Footer alle sider */
 
 footer{
     background-color: var(--dark);
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .social-media {
@@ -528,7 +590,21 @@ footer{
 
 }
 
+@media(max-width: 1150px){
 
+    /* ! Account.html */
+    .account-container{
+        flex-direction: column;
+        height: 800px;
+        max-width: 700px;
+    }
+
+    .sign-in{
+        border-right: none;
+        border-bottom: 1px solid grey;
+        padding-bottom: 50px;
+    }
+}
 
 
 
