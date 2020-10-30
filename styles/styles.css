@@ -20,6 +20,10 @@ body{
     background-repeat: no-repeat;
 }
 
+h1{
+    color: white;
+}
+
 p, h2{
     color: white;
 }
@@ -502,6 +506,262 @@ label{
     color: var(--purple);
 }
 
+/* !sell.html */
+
+.sell-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 900px;
+    width: 90%;
+    margin: 85px auto;
+}
+
+.sell-form{
+    background: var(--dark);
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+    height: 500px;
+    border: 3px solid grey;
+}
+
+.sell-form form{
+    height: 400px;
+    max-width: 800px;
+    margin: auto
+}
+
+.sell-form form input{
+    height: 30px;
+}
+
+#fname{
+    margin-left: 50px;
+    width: 60%;
+}
+
+#lname{
+    width: 60%;
+    margin-left: 52px;
+}
+
+#day{
+    margin-left: 36px;
+    width: 10%;
+}
+
+#month{
+    width: 20%;
+}
+
+#year{
+    width: 29%;
+}
+
+#land{
+    margin-left: 66px;
+    width: 60%;
+}
+
+#city{
+    width: 60%;
+    margin-left: 90px;
+}
+
+#phone {
+    margin-left: 25px;
+    width: 60%;
+}
+
+.sell-form form label, .sell-form form input{
+    margin-top: 30px
+}
+
+.sell-form label{
+    margin-left: 30px;
+}
+
+.sell-form ul{
+    margin-left: 70px;
+    width: 200px;
+}
+
+.sell-form a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+
+/* !sell2.html */
+.attachments-container{
+    max-width: 900px;
+    width: 90%;
+    margin: 85px auto 135px auto;
+}
+
+.attachments-container h2{
+    margin-bottom: 50px;
+}
+
+.attachments-container ul{
+    margin: 0 auto 60px auto;
+}
+
+.attachments-container a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.attachments{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--dark);
+    height: 500px;
+    border: 3px solid grey;
+}
+
+.upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+    background: rgba(43, 25, 25, 0.37); 
+    width: 300px;
+    height: 40%;
+    margin: 35px auto 30px auto;
+    
+}
+
+.upload a{
+    color: white;
+    margin-left: 10px;
+}
+
+/* !sell3.html */
+.thanks-submit{
+    background-image: url(/media/GameHub_Logo_transparent.png);
+    background-repeat: no-repeat;
+    background-position-x: 48%;
+    background-position-y: 40%;
+    height: 726px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.succsess-icon{
+    color: var(--yellow);
+}
+
+.thanks-submit h1{
+    margin-bottom: 100px;
+}
+
+.thanks-submit a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+/* !cart.html */
+
+.register{
+    width: 80%;
+    margin: 100px auto 100px;
+    background-repeat: no-repeat;
+    background: var(--dark);
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid grey;
+}
+
+.register-bg{
+    background: url(/media/GameHub_Logo_transparent.png);
+    width: 600px;
+    margin-top: 50px;
+    margin-right: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+.register-account{
+    width: 25%;
+    height: 250px;
+    margin-top: 50px;
+    background: #352e52;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 1px solid grey;
+}
+
+.register-account p{
+    width: 90%;
+    margin-left: 20px;
+}
+
+.your-product-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.your-product img{
+    width: 300px;
+}
+
+.your-product{
+    display: flex;
+}
+
+.your-product-info{
+    font-size: 25px;
+    margin-left: 20px;
+    height: 200px;
+}
+
+.your-product-info p{
+    margin-top: 30px;
+}
+
+.cart-h2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-h2 h2{
+    margin-bottom: 20px;
+}
+
+.cart-h2 :last-child{
+    margin-right: 125px;
+}
+
+.payment{
+    width: 300px;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.payment div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
 
 
 /* !Footer alle sider */
@@ -524,7 +784,6 @@ footer{
     margin: 0 10px;
     color: var(--yellow);
 }
-
 
 
 
