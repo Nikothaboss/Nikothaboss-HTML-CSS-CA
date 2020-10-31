@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* * fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* * fonts-end */
+
 :root{
     --header-bg: linear-gradient(186deg, rgba(128,30,73,1) 0%, rgba(64,15,37,1) 100%);
     --bg-color: linear-gradient(180deg, rgba(15,13,23,1) 0%, rgba(128,30,73,1) 100%);
@@ -22,6 +28,13 @@ body{
 
 h1{
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 p, h2{
@@ -29,7 +42,13 @@ p, h2{
 }
 
 p{
-    font-size: 18px
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 ul{
@@ -68,7 +87,7 @@ header{
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    min-width: 250px;
+    min-width: 150px;
 }
 
 .searchbar input{
@@ -102,6 +121,7 @@ nav{
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
     padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
     /* width: 500px; */
 }
 
@@ -113,9 +133,11 @@ nav{
 
 .icon a{
     margin-left: 10px;
-    color: black;
+    color: var(--dark);
     text-decoration: none;
 }
+
+
 
 .icon li{
     color: white;
@@ -174,7 +196,7 @@ nav{
 }
 
 .btn-right {
-    color: rgb(179, 178, 178)
+    color: var(--purple)
 }
 
 /** Karuseller */
@@ -279,6 +301,7 @@ nav{
     background: var(--dark);
     margin-top: 100px;
     margin-bottom: 100px;
+    
 }
 
 .related-games h2{
@@ -301,6 +324,7 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem;
+    
 }
 
 .card{
@@ -326,13 +350,6 @@ nav{
     width: 70%;
 }
 
-.card-info{
-    height:  100%;
-    padding: .5rem;
-    display: flex;
-    justify-content: center;
-    
-}
 
 /* ! Products.html */
 
@@ -487,6 +504,11 @@ label{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
+}
+
+.robot span{
+    color: var(--dark);
 }
 
 #check{
@@ -675,7 +697,7 @@ label{
     background: var(--dark);
     height: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border: 1px solid grey;
 }
 
@@ -683,7 +705,7 @@ label{
     background: url(/media/GameHub_Logo_transparent.png);
     width: 600px;
     margin-top: 50px;
-    margin-right: 70px;
+    margin-right: 100px;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
@@ -693,6 +715,7 @@ label{
     width: 25%;
     height: 250px;
     margin-top: 50px;
+    margin-right: 50px;
     background: #352e52;
     display: flex;
     flex-direction: column;
@@ -723,30 +746,36 @@ label{
 
 .your-product-info{
     font-size: 25px;
-    margin-left: 20px;
-    height: 200px;
+    height: 210px;
+    width: 250px;
+    margin-right: 20px;
+    background: var(--dark)
 }
 
 .your-product-info p{
     margin-top: 30px;
+    margin-left: 20px;
+    font-size: 23px;
 }
 
-.cart-h2{
-    width: 80%;
-    margin: auto;
+.your-product-info span{
+    margin-left: 20px
+}
+
+.payment-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.cart-h2 h2{
-    margin-bottom: 20px;
-}
-
-.cart-h2 :last-child{
-    margin-right: 125px;
+.payment-container a{
+    text-decoration: none;
+    color: var(--purple);
 }
 
 .payment{
+    margin: 0;
     width: 300px;
     background: var(--dark);
     display: flex;
@@ -776,7 +805,7 @@ footer{
 }
 
 .social-media {
-    color: #EBEB18;
+    color: var(--yellow);
     
 }
 
@@ -802,6 +831,7 @@ footer{
 
     .hamburger{
         display: flex;
+        color: var(--dark);
         
     }
 
@@ -829,7 +859,24 @@ footer{
     
 }
 
+@media(max-width: 520px){
+
+    /* ! Account3/2.html */
+    .create-wrapper{
+        background-position: top;
+        background-size: contain;
+        height: 720px;
+        justify-content: flex-end;
+    }
+
+    /* ! Products.html */
+    .game-container{
+        padding: 3rem 0;
+    }
+}
+
 @media(max-width: 690px){
+    /* ! index-html */
     main{
         align-items: center;
         justify-content: space-around;
@@ -839,12 +886,25 @@ footer{
         flex-direction: column;
         align-items: center;
         margin-top: 300px;
-        margin-left: 100px;
+        margin-left: 90px;
     }
 
     .btn-right{
         margin-right: 50px;
         margin-top: 20px;
+    }
+
+    /* ! cart.html */
+    .register-bg{
+        width: 100%;
+    }
+
+    .your-product{
+        flex-direction: column;
+    }
+
+    .your-product-info{
+        width: 300px;
     }
 
 }
@@ -862,6 +922,42 @@ footer{
         border-right: none;
         border-bottom: 1px solid grey;
         padding-bottom: 50px;
+    }
+
+    /* ! cart.html */
+    .register{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-bg{
+        margin-right: 0;
+        background-position: center;
+        background-size: contain;   
+    }
+
+    .register-account{
+        margin: 0;
+        width: 60%;
+        align-items: center;
+    }
+
+    .register-account p{
+        width: 65%;
+        margin: 0;
+    }
+
+    .your-product-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-container{
+        margin-top: 20px;
+    }
+
+    .your-product-info{
+        margin: 0;
     }
 }
 

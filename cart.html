@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Hub HTML/CSS CA</title>
+    <title>Cart | HTML/CSS CA</title>
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,18 +33,18 @@
                     </div>
 
                     <div class="icon">
-                        <a href=""><i class="fas fa-dollar-sign fa-lg"></i></a>
-                        <a href=""><li>Sell</li></a>
+                        <a href="sell.html"><i class="fas fa-dollar-sign fa-lg"></i></a>
+                        <a href="sell.html"><li>Sell</li></a>
                     </div>
 
                     <div class="icon">
-                        <a href=""><i class="fas fa-user-circle fa-lg"></i></a>
-                        <a href=""><li>Account</li></a>
+                        <a href="account.html"><i class="fas fa-user-circle fa-lg"></i></a>
+                        <a href="account.html"><li>Account</li></a>
                     </div>
 
                     <div class="icon">
-                        <a href=""><i class="fas fa-shopping-cart fa-lg"></i></a>
-                        <a href=""><li>Cart</li></a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+                        <a href="cart.html"><li>Cart</li></a>
                     </div>
                 </ul>
             </nav>
@@ -63,52 +63,56 @@
                     <p>42069420</p>
                 </div>
             </div>
-        </div>
+        
 
-        <div class="cart-h2">
-            <h2>Your Product</h2>
-            <h2>Payment method</h2>
-        </div>
+      
+            <div class="your-product-wrapper">
+                <div class="your-product-container">
+                    <h2>Your Product</h2>
+                    <div class="your-product">
+                        <img src="/media/Cyberpunk-2077-1024x576.jpg" alt="cyberpunk cover">
+                        <div class="your-product-info">
+                            <span>Cyberpunk 2077</span>
+                            <p>Price: $69</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="your-product-wrapper">
-            <div class="your-product">
-                <img src="/media/Cyberpunk-2077-1024x576.jpg" alt="cyberpunk cover">
-                <div class="your-product-info">
-                    <span>Cyberpunk 2077</span>
-                    <p>$69</p>
+                <div class="payment-container">
+                    <h2>Payment method</h2>
+                    <div class="payment">
+                        <div>
+                            <p>Visa</p>
+                            <input type="checkbox" name="visa" id="visa">
+                        </div>
+        
+                        <div>
+                            <p>Mastercard</p>
+                            <input type="checkbox" name="master" id="mastercard">
+                        </div>
+        
+                        <div>
+                            <p>PayPal</p>
+                            <input type="checkbox" name="paypal" id="paypal">
+                        </div>
+        
+                        <div>
+                            <p>PaySafe</p>
+                            <input type="checkbox" name="paysafe" id="paysafe">
+                        </div>
+        
+                        <div>
+                            <p>Vipps</p>
+                            <input type="checkbox" name="vipps" id="vipps">
+                        </div>
+                    </div>
+                    <ul class="log-in-btn">
+                        <a href="/cart2.html"><li>Purchase</li></a>
+                    </ul>
                 </div>
             </div>
-
-            <div class="payment">
-                <div>
-                    <p>Visa</p>
-                    <input type="checkbox" name="visa" id="visa">
-                </div>
-
-                <div>
-                    <p>Mastercard</p>
-                    <input type="checkbox" name="master" id="mastercard">
-                </div>
-
-                <div>
-                    <p>PayPal</p>
-                    <input type="checkbox" name="paypal" id="paypal">
-                </div>
-
-                <div>
-                    <p>PaySafe</p>
-                    <input type="checkbox" name="paysafe" id="paysafe">
-                </div>
-
-                <div>
-                    <p>Vipps</p>
-                    <input type="checkbox" name="vipps" id="vipps">
-                </div>
-            </div>
+        </div>
     
-        </div>
-
-
     </main>
     <footer>
         <div class="social-media">
